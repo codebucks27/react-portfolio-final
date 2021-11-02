@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+# Build a Stunning Portfolio with React JS using Styled-Components and framer-motion for awesome Animations
+
+This repository contains starter code for Portfolio Website in ReactJS. <br />
+
+View Demo👇: <br />
+https://react-portfolio-sigma.vercel.app/ <br />
+
+If you want to learn how to create it please follow below tutorial👇: <br />
+
+https://youtu.be/jcohAIaSy2M <br />
+
+### Images of The Portfolio Website:
+![HOME](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Home.png)
+![Intro](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Intro.png)
+![Blog](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Blog.png)
+![Home Mobile](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Home-Mobile.png)
+![Intro Mobile](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Intro-Mobile.png)
+![Intro Blog](https://github.com/codebucks27/React-Portfolio-starter-code-files/blob/main/Portfolio%20Images/Blog-Mobile.png)
+
+
+### Resources Used in This Project
+
+Design in : https://www.figma.com/ <br />
+Svg Icons from :https://fontawesome.com/  <br />
+Spaceman 3D Image from : https://www.figma.com/community/plugin/769588393361258724/Vectary-3D-Elements <br />
+Audio: You said it Song by Claire Margot
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
