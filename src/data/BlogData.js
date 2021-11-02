@@ -1,3 +1,5 @@
+// blog data
+
 export const Blogs = [
     {
         id:1,
