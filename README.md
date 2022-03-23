@@ -1,13 +1,16 @@
 # Build a Stunning Portfolio with React JS using Styled-Components and framer-motion for awesome Animations
 
+![GitHub stars](https://img.shields.io/github/stars/codebucks27/react-portfolio-final?style=social&logo=ApacheSpark&label=Stars&maxAge=2592000)&nbsp;&nbsp;
+![GitHub forks](https://img.shields.io/github/forks/codebucks27/react-portfolio-final?style=social&logo=KashFlow)&nbsp;&nbsp;
+![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow&maxAge=2592000)&nbsp;&nbsp;<br />
 This repository contains Final code for The Portfolio Website in ReactJS. <br />
 
 View Demo👇: <br />
 https://react-portfolio-sigma.vercel.app/ <br />
 
-If you want to learn how to create it please follow below tutorial👇: <br />
-
+If you want to learn how to create it please follow below tutorial👇: <br /><br />
 https://youtu.be/jcohAIaSy2M <br />
+[![YouTube Video Views](https://img.shields.io/youtube/views/jcohAIaSy2M?style=social)](https://youtu.be/jcohAIaSy2M)<br />
 
 ⚠⚠⚠ If you want full code of this website then you can get it from here👇: <br />
 
