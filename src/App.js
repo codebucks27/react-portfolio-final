@@ -10,6 +10,7 @@ import AboutPage from './components/AboutPage';
 import BlogPage from './components/BlogPage';
 import WorkPage from './components/WorkPage';
 import MySkillsPage from './components/MySkillsPage';
+import Contact from './components/Contact';
 import { AnimatePresence } from "framer-motion";
 import SoundBar from "./subComponents/SoundBar";
 
@@ -34,6 +35,7 @@ function App() {
       <Route exact path="/blog" component={BlogPage}/>
       <Route exact path="/work" component={WorkPage}/>
       <Route exact path="/skills" component={MySkillsPage}/>
+      <Route exact path="/contact" component={Contact}/>
 
     </Switch>
 </AnimatePresence>

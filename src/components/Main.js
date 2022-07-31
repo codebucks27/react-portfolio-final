@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
-import SocialIcons from '../subComponents/SocialIcons'
+import SocialCons from '../subComponents/SocialIcons'
 import { YinYang } from './AllSvgs'
-import Intro from './Intro'
+import Intro from './intro'
+import SoundBar from '../subComponents/SoundBar'
 ;
 
 
@@ -15,9 +16,7 @@ background: ${props => props.theme.body};
 width: 100vw;
 height: 100vh;
 overflow:hidden;
-
 position: relative;
-
 h2,h3,h4,h5,h6{
   font-family:'Karla', sans-serif ;
   font-weight:500;
@@ -45,9 +44,9 @@ transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index:1;
 `
+
 const WORK = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
-
 position: absolute;
 top: 50%;
 left: calc(1rem + 2vw);
@@ -62,7 +61,6 @@ bottom: 1rem;
 left: 0;
 right: 0;
 width: 100%;
-
 display: flex;
 justify-content: space-evenly;
 `
@@ -96,17 +94,14 @@ border: none;
 outline: none;
 background-color: transparent;
 cursor: pointer;
-
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 transition: all 1s ease;
-
 &>:first-child{
     animation: ${rotate} infinite 1.5s linear;
 }
-
 &>:last-child{
     display: ${props => props.click ? 'none' :'inline-block'  };
     padding-top: 1rem;
@@ -137,15 +132,16 @@ const Main = () => {
          <DarkDiv   click={click}/>
             <Container>
             <PowerButton />
+            <SoundBar />
             <LogoComponent theme={click ? 'dark' :'light'}/>
-            <SocialIcons theme={click ? 'dark' :'light'} />
+            <SocialCons theme={click ? 'dark' :'light'} />
            
             <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span>click here</span>
+                <h2>Click Here</h2>
             </Center>
 
-            <Contact target="_blank" to={{pathname:"mailto:codebucks27@gmail.com"}}>
+            <Contact to="/contact">
                 <motion.h2
                 initial={{
                     y:-200,
@@ -159,7 +155,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Say hi..
+                    Contact Me
                 </motion.h2>
             </Contact>
             <BLOG to="/blog">
@@ -175,10 +171,10 @@ const Main = () => {
                 whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Blog
+                    Resume
                 </motion.h2>
             </BLOG>
-            <WORK to="/work" click={+click}>
+            <WORK to="/about" click={+click}>
                 <motion.h2
                 initial={{
                     y:-200,
@@ -191,11 +187,11 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Work
+                    About
                 </motion.h2>
             </WORK>
             <BottomBar>
-            <ABOUT to="/about" click={+click}>
+            <ABOUT to="/work" click={+click}>
                 <motion.h2
                 initial={{
                     y:200,
@@ -208,7 +204,7 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    About.
+                    Work
                 </motion.h2>
             </ABOUT>
             <SKILLS to="/skills">
@@ -224,14 +220,14 @@ const Main = () => {
                  whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    My Skills.
+                    My Skills
                 </motion.h2>
             </SKILLS>
 
             </BottomBar>
 
             </Container>
-            {click ? <Intro click={click} /> : null }
+            { click ? <Intro click={click} /> : null }
         </MainContainer>
     )
 }
