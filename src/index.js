@@ -1,22 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-// import './index.css';
-import App from './App';
+import React from 'react'
+import App from './App'
 // import reportWebVitals from './reportWebVitals';
-import '../node_modules/normalize.css'
-import { BrowserRouter } from 'react-router-dom';
+// import '../node_modules/normalize.css'
+import "normalize.css"
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
-  <React.StrictMode>
+import { BrowserRouter } from 'react-router-dom'
 
-  <BrowserRouter>
+
+// From react 18 we should use createRoot instead of ReactDOM
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(<BrowserRouter>
   <App />
-  </BrowserRouter>
+</BrowserRouter>);
 
-   
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// )
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

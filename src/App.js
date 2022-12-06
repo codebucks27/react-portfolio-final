@@ -1,51 +1,51 @@
-import { Route, Switch, useLocation } from "react-router"
-import { ThemeProvider } from "styled-components"
-import { lightTheme } from "./components/Themes"
-import GlobalStyle from "./globalStyles"
-
+import { Routes, Route, useLocation } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { lightTheme } from "./components/Themes";
+import { AnimatePresence } from "framer-motion";
+import GlobalStyle from "./globalStyles";
 
 //Components
-import Main from './components/Main';
-import AboutPage from './components/AboutPage';
-import BlogPage from './components/BlogPage';
-import WorkPage from './components/WorkPage';
-import MySkillsPage from './components/MySkillsPage';
-import { AnimatePresence } from "framer-motion";
+import Main from "./components/Main";
+import AboutPage from "./components/AboutPage";
+import BlogPage from "./components/BlogPage";
+import WorkPage from "./components/WorkPage";
+import MySkillsPage from "./components/MySkillsPage";
 import SoundBar from "./subComponents/SoundBar";
 
-
 function App() {
-
   const location = useLocation();
-  return <>
+  return (
+    <>
+      <GlobalStyle />
 
+      <ThemeProvider theme={lightTheme}>
+        <SoundBar />
 
-  <GlobalStyle />
+        {/* For framer-motion animation on page change! */}
+        {/* Changed prop from exitBefore to mode */}
+        <AnimatePresence mode="wait">
+          {/* Changed Switch to Routes */}
 
-    <ThemeProvider theme={lightTheme}>
+          <Routes location={location} key={location.pathname}>
+            {/* Changed component to element */}
 
-    <SoundBar />
+            <Route path="/" element={<Main />} />
 
-{/* For framer-motion animation on page change! */}
-<AnimatePresence exitBeforeEnter>
-<Switch  location={location} key={location.pathname}>
-      <Route exact path="/" component={Main}/>
-      <Route exact path="/about" component={AboutPage}/>
-      <Route exact path="/blog" component={BlogPage}/>
-      <Route exact path="/work" component={WorkPage}/>
-      <Route exact path="/skills" component={MySkillsPage}/>
+            <Route path="/about" element={<AboutPage />} />
 
-    </Switch>
-</AnimatePresence>
-    
-    
-    </ThemeProvider>
+            <Route path="/blog" element={<BlogPage />} />
 
+            <Route path="/work" element={<WorkPage />} />
 
-    
+            <Route path="/skills" element={<MySkillsPage />} />
+            {/* Below is to catch all the other routes and send the user to main component,
+you can add custom 404 component or message instead of Main component*/}
+            <Route path="*" element={<Main />} />
+          </Routes>
+        </AnimatePresence>
+      </ThemeProvider>
     </>
-    
+  );
 }
 
-export default App
-
+export default App;
