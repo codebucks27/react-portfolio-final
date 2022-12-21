@@ -23,10 +23,10 @@ function App() {
 
         {/* For framer-motion animation on page change! */}
         {/* Changed prop from exitBefore to mode */}
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode='wait'>
           {/* Changed Switch to Routes */}
 
-          <Routes location={location} key={location.pathname}>
+          <Routes key={location.pathname} location={location} >
             {/* Changed component to element */}
 
             <Route path="/" element={<Main />} />
