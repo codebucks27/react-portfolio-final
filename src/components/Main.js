@@ -28,7 +28,7 @@ const Container = styled.div`
 padding: 2rem;
 `
 
-const Contact = styled(NavLink)`
+const Contact = styled.a`
 color: ${props => props.theme.text};
 position: absolute;
 top: 2rem;
@@ -145,7 +145,7 @@ const Main = () => {
                 <span>click here</span>
             </Center>
 
-            <Contact target="_blank" to={{pathname:"mailto:codebucks27@gmail.com"}}>
+            <Contact target="_blank" href="mailto:codebucks27@gmail.com">
                 <motion.h2
                 initial={{
                     y:-200,
