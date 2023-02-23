@@ -6,16 +6,14 @@
 
 This repository contains Final code for The Portfolio Website in ReactJS. <br />
 
-View Demo👇: <br />
-https://react-portfolio-sigma.vercel.app/ <br />
+For the **Demo** and **Final Code** checkout this link👇: <br />
+<a href="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion#code-links" target="_blank" rel="dofollow">Checkout this Responsive Portfolio in ReactJS</a> <br />
 
-If you want to learn how to create it please follow below tutorial👇: <br /><br />
+If you want to learn how to create it please follow below tutorial👇: <br />
 https://youtu.be/jcohAIaSy2M <br />
 [![YouTube Video Views](https://img.shields.io/youtube/views/jcohAIaSy2M?style=social)](https://youtu.be/jcohAIaSy2M)<br />
 
-⚠⚠⚠ If you want full code of this website then you can get it from here👇: <br />
-
-https://codebucks.gumroad.com/l/hsTPD <br />
+[⚠⚠⚠ If you want full code of this website then you can get it from here👇: <br />]::
 
 You'll get code files which contans code for responsive portfolio website with
 all the animations showed in the demo.
@@ -24,11 +22,11 @@ Also, I have used React Lazy loading to increase loading speed.
 I have recently updated all the required dependencies for React Portfolio Website.
 You might see some differences in implementation such as,
 
-=> In implementing react-router
+- In implementing react-router
 
-=> I have removed react-particles-js since it has been deprecated and used react-tsparticles instead, you can see it's implementation in ParticlesComponent.js file.
+- I have removed react-particles-js since it has been deprecated and used react-tsparticles instead, you can see it's implementation in ParticlesComponent.js file.
 
-=> In the index.js file we are no longer using ReactDOM since we can use createRoot in React 18.
+- In the index.js file we are no longer using ReactDOM since we can use createRoot in React 18.
 
 ### Images of The Portfolio Website:
 
