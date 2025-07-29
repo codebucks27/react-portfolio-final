@@ -14,22 +14,29 @@ import BigTitlte from "../subComponents/BigTitlte";
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
-
-  height: 400vh;
+  height: 220rem;
+  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
+  padding-left: 8rem;
+  overflow: hidden;
+`;
+
+const ScrollContainer = styled.div`
+  position: fixed;
+  top: 12rem;
+  left: 8rem;
+  width: 100%;
+  overflow-x: hidden;
 `;
 
 const Main = styled(motion.ul)`
-  position: fixed;
-  top: 12rem;
-  left: calc(10rem + 15vw);
-  height: 40vh;
+  min-width:100%;
   display: flex;
-
   color: white;
 `;
+
 const Rotate = styled.span`
   display: block;
   position: fixed;
@@ -61,7 +68,7 @@ const WorkPage = () => {
     let element = ref.current;
 
     const rotate = () => {
-      element.style.transform = `translateX(${-window.pageYOffset}px)`;
+      element.style.transform = `translateX(${-(window.pageYOffset)}px)`;
 
       return (yinyang.current.style.transform =
         "rotate(" + -window.pageYOffset + "deg)");
@@ -80,11 +87,14 @@ const WorkPage = () => {
         <SocialIcons theme="dark" />
         <PowerButton />
 
-        <Main ref={ref} variants={container} initial="hidden" animate="show">
-          {Work.map((d) => (
-            <Card key={d.id} data={d} />
-          ))}
-        </Main>
+        <ScrollContainer>
+          <Main ref={ref} variants={container} initial="hidden" animate="show">
+            {Work.map((d) => (
+              <Card key={d.id} data={d} />
+            ))}
+            <h2 style={{fontSize:"4rem", rotate:"270deg"}}>END</h2>
+          </Main>
+        </ScrollContainer>
         <Rotate ref={yinyang}>
           <YinYang width={80} height={80} fill={DarkTheme.text} />
         </Rotate>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { DarkTheme } from '../components/Themes'
+import { userData } from '../config'
 
 
 
@@ -19,7 +20,7 @@ z-index:3;
 const LogoComponent = (props) => {
     return (
         <Logo color={props.theme}>
-          CB
+          {userData.logo}
         </Logo>
     )
 }

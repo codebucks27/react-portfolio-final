@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
 import Me from '../assets/Images/profile-img.png'
+import { userData } from '../config'
 
 
 const Box = styled(motion.div)`
@@ -44,7 +45,7 @@ display: flex;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0%);
-    width: 100%;
+    max-height:450px;
     height: auto;
 }
 `
@@ -80,8 +81,8 @@ const Intro = () => {
             <SubBox>
                 <Text>
                     <h1>Hi,</h1>
-                    <h3>I'm CodeBucks.</h3>
-                    <h6>I design and Code simple yet beautiful websites.</h6>
+                    <h3>I'm {userData.name}.</h3>
+                    <h6>{userData.description}</h6>
                 </Text>
             </SubBox>
             <SubBox>

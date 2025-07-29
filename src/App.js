@@ -11,9 +11,23 @@ import BlogPage from "./components/BlogPage";
 import WorkPage from "./components/WorkPage";
 import MySkillsPage from "./components/MySkillsPage";
 import SoundBar from "./subComponents/SoundBar";
+import { useEffect } from "react";
+import { userData } from "./config";
 
 function App() {
   const location = useLocation();
+  useEffect(()=>{
+    document.title = userData.meta_Title;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", userData.meta_description);
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = "description";
+      meta.content = userData.meta_description;
+      document.head.appendChild(meta);
+    }
+  })
   return (
     <>
       <GlobalStyle />

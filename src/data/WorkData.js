@@ -3,61 +3,66 @@
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
-        
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        name:"ijsreat.com - Research Publication Platform",
+        description:"Academic research platform with article archiving, peer review, and advanced search.",
+        tags:["react","node.js","mongodb","express"],
+        demo:"https://ijsreat.com/",
+        github:"https://github.com/tuhinkairii/ijsreat"
     },
     {
         id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
-        
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
-        
+        name:"AI-Powered End-to-End Hiring Platform",
+        description:"Recruitment platform with resume analysis, job matching, and automated screening.",
+        tags:["react","python","flask","ai/ml","nlp"],
+        demo:"https://ai-hiring-platform.vercel.app/",
+        github:"https://github.com/tuhinkairii/ai-hiring-platform"
     },
     {
         id:3,
-        name:"Dev.to Clone",
-        description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
-        
-        demo:"http://devto-clone-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/devto-clone"
+        name:"One Point Prep - AI EdTech System",
+        description:"AI-powered education platform with exam analysis and personalized learning paths.",
+        tags:["next.js","webrtc","hugging-face","rag","ai"],
+        demo:"https://onepointprep.vercel.app/",
+        github:"https://github.com/tuhinkairii/one-point-prep"
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
-        
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
-       
-    },{
+        name:"Real-Time Chat Application",
+        description:"Chat app with video/audio calling, AI replies, and real-time messaging.",
+        tags:["next.js","convex","zegocloud","ai"],
+        demo:"https://whatsapp-mauve.vercel.app/",
+        github:"https://github.com/tuhinkairii/realtime-chat-app"
+    },
+    {
         id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
-        
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
-        
+        name:"Medical Triage Bot",
+        description:"GPT-2 health assistant for medical screening and symptom analysis.",
+        tags:["react","flask","gpt-2","healthcare"],
+        demo:"https://medical-triage-bot.vercel.app/",
+        github:"https://github.com/tuhinkairii/medical-triage-bot"
     },
     {
         id:6,
-        name:"Responsive Navigation Menu",
-        description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
-        tags:["react","react-router","css"],
-        
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-responsive-navbar"
-        
+        name:"Vitals Detection System",
+        description:"ML-based health anomaly detection system with high precision.",
+        tags:["python","scikit-learn","flask","ml"],
+        demo:"https://vitals-detection.vercel.app/",
+        github:"https://github.com/tuhinkairii/vitals-detection"
     },
-    
-  
-] 
+    {
+        id:7,
+        name:"Elegance Landing Page",
+        description:"Luxury brand landing page with animations and immersive user experience.",
+        tags:["react","gsap","styled-components","luxury"],
+        demo:"https://landing-page-cloths.vercel.app/",
+        github:"https://github.com/tuhinkairii/elegance-landing-page"
+    },
+    {
+        id:8,
+        name:"E-commerce Platform",
+        description:"MERN store with payment gateway, JWT authentication, and Redux state management.",
+        tags:["react","node.js","mongodb","razorpay","redux"],
+        demo:"https://ecommerce-mern-platform.vercel.app/",
+        github:"https://github.com/tuhinkairii/ecommerce-platform"
+    }
+]

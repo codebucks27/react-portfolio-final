@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { Facebook, Github, Twitter, YouTube } from "../components/AllSvgs";
 import { DarkTheme } from "../components/Themes";
+import { userData } from "../config";
 
 const Icons = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ const Icons = styled.div`
 
 const Line = styled(motion.span)`
   width: 2px;
-  height: 8rem;
+  height: 4rem;
   background-color: ${(props) =>
     props.color === "dark" ? DarkTheme.text : DarkTheme.body};
 `;
@@ -39,7 +40,8 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://github.com/codebucks27"}
+          rel="noreferrer"
+          href={userData.git}
         >
           <Github
             width={25}
@@ -56,7 +58,8 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://twitter.com/code_bucks"}
+          rel="noreferrer"
+          href={userData.twiter}
         >
           <Twitter
             width={25}
@@ -73,7 +76,8 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://facebook.com/codebucks27"}
+          rel="noreferrer"
+          href={userData.fb}
         >
           <Facebook
             width={25}
@@ -90,7 +94,8 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://youtube.com"}
+          rel="noreferrer"
+          href={userData.youtube}
         >
           <YouTube
             width={25}
@@ -106,7 +111,7 @@ const SocialIcons = (props) => {
           height: 0,
         }}
         animate={{
-          height: "8rem",
+          height: "4rem",
         }}
         transition={{
           type: "spring",
