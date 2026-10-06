@@ -14,7 +14,7 @@ https://youtu.be/jcohAIaSy2M <br />
 [![YouTube Video Views](https://img.shields.io/youtube/views/jcohAIaSy2M?style=social)](https://youtu.be/jcohAIaSy2M)<br />
 
 ---
-✨ Checkout my brand new SaaS application -> [AI Headshot Generator](https://www.smartheadshots.ai)
+
 
 ---
 
@@ -73,3 +73,7 @@ bun run preview  # preview the production build locally
 ```
 
 The project is plain Vite + React, so `npm install && npm run dev` works too if you'd rather not use Bun.
+
+## Other project
+
+From the creator: [SmartHeadshots AI — AI headshot generator](https://www.smartheadshots.ai/).
