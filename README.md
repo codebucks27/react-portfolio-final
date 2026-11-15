@@ -74,6 +74,8 @@ bun run preview  # preview the production build locally
 
 The project is plain Vite + React, so `npm install && npm run dev` works too if you'd rather not use Bun.
 
-## Other project
+## Other projects
 
 From the creator: [SmartHeadshots AI — AI headshot generator](https://www.smartheadshots.ai/).
+
+I also built [AI Room Design, an AI room redesign tool](https://www.airoomdesignapp.com).
